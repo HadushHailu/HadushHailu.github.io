@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>Hadush Hailu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="projects.html">Projects</a></li>
+				  <li><a href="#publications">Publications</a></li> 
+				  <li><a href="#">CV</a></li> 
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  
+  <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">        
+            <!-- Researches -->
+            <div class="col-md-8" style="height: 100vh;">    
+                <h2 id="Researches">Researches</h2>
+
+	        <h3 id=""><font color="red">Breast Cancer Detection using CNN</font></h3>
+		<div class="rp-container-bc">
+      		<div class="image" style="padding-right: 10px; border:thin">
+       		 	<img src="img/breast_cancer.png" width="700" height="400">
+      		</div>
+     		<div class="text" style="border:thin">
+                <p>Breast cancer is prevalent in Ethiopia that accounts 34% among women cancer
+                  patients. The diagnosis technique in Ethiopia is manual which was proven to be
+                  tedious, subjective, and challenging. Deep learning techniques are revolutionizing
+                  the field of medical image analysis and hence in this study, we proposed Con-
+                  volutional Neural Networks (CNNs) for breast mass detection so as to minimize
+                  the overheads of manual analysis. CNN architecture is designed for the feature
+                  extraction stage and adapted both the Region Proposal Network (RPN) and
+                  Region of Interest (ROI) portion of the faster R-CNN for the automated breast
+                  mass abnormality detection.
+                  Our model detects mass region and classifies them into benign or malignant
+                  abnormality in mammogram(MG) images at once. For the proposed model,
+                  MG images were collected from different hospitals, locally.The images were
+                  passed through different preprocessing stages such as gaussian filter, median
+                  filter, bilateral filters and extracted the region of the breast from the back-
+                  ground of the MG image. The performance of the model on test dataset is found
+                  to be: detection accuracy 91.86%, sensitivity of 94.67% and AUC-ROC of 92.2%.</p>
+                </div> 
+            </div>
+
+		    
+		<h3 id=""><font color="red">Deep Learning-based Amharic Question and Answering system for FAQs in Universities</font></h3>
+		<div class="rp-container-qa">
+      		<div class="image" style="padding-right: 10px; border:thin">
+       		 	<img src="img/qa_deeplearning.png" width="700" height="400">
+      		</div>
+     		<div class="text" style="border:thin">
+                <p>University students often spend a considerable amount of time seeking answers to common questions from administrators or teachers. 
+		This can become tedious for both parties, leading to a need for a solution. In response, this paper proposes a chatbot model that utilizes natural 
+		language processing and deep learning techniques to answer frequently asked questions (FAQs) in the Amharic language. Chatbots are computer programs that 
+		simulate human conversation through the use of artificial intelligence (AI), acting as a virtual assistant to handle questions and other tasks. 
+		The proposed chatbot program employs tokenization, normalization, stop word removal, and stemming to analyze and categorize Amharic input sentences. 
+		Three machine learning model algorithms were used to classify tokens and retrieve appropriate responses: Support Vector Machine (SVM), Multinomial Naïve Bayes, 
+		and deep neural networks implemented through TensorFlow, Keras, and NLTK. The deep learning model achieved the best results with 91.55% accuracy and a validation 
+		loss of 0.3548 using an Adam optimizer and SoftMax activation function. The chatbot model was integrated with Facebook Messenger and deployed on a Heroku server for 
+		24-hour accessibility. The experimental results demonstrate that the chatbot framework achieved its objectives and effectively addressed challenges such as Amharic Fidel 
+		variation, morphological variation, and lexical gaps. Future research could explore the integration of Amharic WordNet to narrow the lexical gap and support more complex 
+		questions.</p>
+                </div> 
+                </div>
+
+		<h3 id=""><font color="red">Experimental Investigation of Mutual Collision Avoidance Behavior for Multiple Mobile Robots</font></h3>
+		<div class="rp-container-qa">
+      		<div class="image" style="padding-right: 10px; border:thin">
+       		 	<img src="img/collision_avoidance.png" width="700" height="400">
+      		</div>
+     		<div class="text" style="border:thin">
+                <p>In an environment where multiple robots co-exist together as a group, it is important to ensure safe navigation for all robots i.e., 
+	        the robots are supposed to have a real-time oscillation-free and collision-free motion planning. In a centralized system of architecture where a single central entity manages 
+		all the activity, it would be easy to have an optimized generic solution that works for all robots. On the contrary, in a decentralized system of architecture where neither 
+		central entity exists supervising the whole phenomena nor does any form of communication-explicit or implicit-exists between or among the constituent robots, 
+		it is challenging to come up with a generic collision avoidance model that works for all robots and ensures good overall mutual behavior. In such situation,
+		oscillation problem where robots synchronously jiggle their avoiding direction is prevalent. In this paper, we have proposed a way for realizing multi-robot collision 
+		avoidance without oscillation problems by extending a method that was originally developed as a collision avoidance method for a single robot in a dynamic environment. 
+		We aimed to eliminate the oscillation problems by first finding the key parameters that affects the motion behavior of the robots. Those key parameters are variables that 
+		lead to different interaction behavior when plugged with different values. We have found three parameters that affect the robot's behavior, those are sensing range, update 
+		frequency of local path generation and robot's maximum angular velocity. Lastly, repetitive experiments are conducted for each of the specific parameter thereby assigning 
+		different values for different robots and the experimental results are assessed to gauge the number of oscillation cases and non-oscillation cases occurred. 
+		The experimental result showed that different values of sensing range for different robots have eliminated the possibility of oscillation and likewise assigning different 
+		values of update frequency of local path generation and robot's maximum angular velocity for different robots have substantially decreased the number of oscillation cases 
+		compared to the number of oscillation cases of experiment with no parameter change applied</p>
+                </div> 
+                </div>
+            
+        </div>
+
+
+    </div>
+    <!-- /.container -->
+    
+    <!-- Other people may like it too! -->
+    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+    
+</body>
+
+</html>
