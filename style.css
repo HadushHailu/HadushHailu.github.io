@@ -218,7 +218,15 @@ h2 {
 }
 
 .robot-card img {
-  width: 100%;
+  width: 220px;                /* adjust size */
+  height: 150px;               /* rectangle dimensions */
+  object-fit: cover;           /* keeps image proportional */
+  border-radius: 40px;         /* rounded corners */
+  border: 2px solid #ccc;      /* optional subtle border */
+  display: block;
+  margin: 0 auto 10px;         /* center inside card */
+}
+
 
 /* === Responsive adjustments === */
 @media (max-width: 1200px) {
