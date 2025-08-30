@@ -1,0 +1,251 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+  color: #222;
+}
+
+header {
+  background: #222;
+  padding: 10px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px;
+  width: 55%;              /* responsive width */
+  max-width: 1600px;       /* prevent too wide on huge screens */
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 2px solid #ff4500;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 200px;         /* or any size */
+  height: 200px;        /* make sure it’s square */
+  object-fit: cover;    /* crop inside square */
+  border-radius: 50%;   /* makes it a perfect circle */
+}
+
+
+.bio {
+  flex: 1;
+}
+
+.social-links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  color: #0077b5; /* LinkedIn blue (applies to hover for all) */
+}
+
+
+/* === Publications section === */
+.pub-item {
+  display: flex;
+  flex-direction: row;   /* force side-by-side */
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+  align-items: flex-start;
+}
+
+.pub-item img {
+  width: 40%;            /* take half the row */
+  height: auto;          /* keep proportions */
+  object-fit: contain;   /* keep full image */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pub-details {
+  width: 60%;            /* take other half */
+  min-width: 0;          /* prevent overflow */
+}
+
+.pub-details h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.pub-details p {
+  margin: 5px 0;
+}
+
+.pub-links a {
+  margin-right: 10px;
+  font-size: 0.9rem;
+  color: #ff4500;
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+.pub-links {
+  margin-top: 5px;
+}
+
+.pub-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* === Projects section === */
+.projects-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;   /* equal height rows */
+  margin-bottom: 30px;
+  gap: 10%;               /* gap between the two videos */
+}
+
+.project-card {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card video {
+  width: 100%;
+  border-radius: 5px;
+  flex-grow: 1;           /* ensures same row height */
+  object-fit: cover;
+}
+
+.project-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.05rem;
+}
+
+.project-desc {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 5px;
+}
+
+.project-links {
+  text-align: center;   /* centers the link(s) inside */
+  margin-top: 10px;     /* optional spacing */
+}
+
+.project-links a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff0000;       /* YouTube red */
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* === Robots Section === */
+#robots {
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#robots h2 {
+  border-bottom: 2px solid #ff4500;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.robots-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.robot-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.robot-card img {
+  width: 100%;
+
+/* === Responsive adjustments === */
+@media (max-width: 1200px) {
+  section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .pub-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pub-item img,
+  .pub-details {
+    width: 100%;        /* stack full width */
+  }
+
+  .pub-item img {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 95%;
+    padding: 20px;
+  }
+}

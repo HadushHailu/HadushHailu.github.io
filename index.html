@@ -1,121 +1,305 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <html lang="en">
 <head>
-  <title>Hadush Hailu</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <title>Hadush Hailu - Academic Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#preprints">WIP</a></li>
+        <li><a href="#preprints">Competitions</a></li>
+        <li><a href="#preprints">Robots</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/profile.jpeg" alt="Profile photo" class="profile-pic">
+      <div class="bio">
+        <p>
+          I’m Hadush Hailu, a Master’s student in Computer Science at Maharishi International University (USA), graduating December 2025. Under supervision of <a href="https://scholar.google.com/citations?hl=en&user=VS3lzeUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Prof Ankhtuya Ochirbat </a> my research spans multimodal learning and deep metric learning, with prior work in multi-robot collision avoidance from my second Masters in robotics at the <a href="https://www.roboken.iit.tsukuba.ac.jp/en/" target="_blank">Intelligent Robot Laboratory </a>, <a href = "https://www.tsukuba.ac.jp/en/" target="_blank">University of Tsukuba </a> (Japan) under <a href="https://scholar.google.com/citations?user=FcWCsSgAAAAJ&hl=ja" target="_blank">Prof. Akhisa Ohya </a>and <a href="https://dblp.org/pid/04/11272.html" target="_blank">Prof. Aynori Yorozu </a>.
+        </p>
+        <p>
+          I am seeking PhD opportunities starting in Spring 2026, with research interests in vision–language–action for generalist manipulation, computer vision, and applications in agricultural and service robotics. I am also interested about collaborative research and participation in international robotics competitions. You can reach me out at had.hailu [at] gmail.com
+        </p>
 
-<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="r_and_p.html">Researches</a></li>
-			          <li><a href="i_projects.html">Projects</a></li>
-				  <li><a href="publications">Publications</a></li> 
-			          <li><a href="#">Competitions</a></li> 
-			          <li><a href="#">Blog</a></li> 
-				  <li><a href="CV_Hadush_Hailu.pdf">CV</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-  
-  <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-                
-                <!-- Main Image -->
-                <img class="img-responsive" src="img/Hadush_profile.jpg" width="50%" height="50%" style="display: block; margin: 0 auto;" alt=""><br>
-                
-                <div style="margin-top:3%; text-align:justify;">  
-			
-<p>My name is Hadush Hailu. I have studied Computer Science and Engineering at Mekelle University - Mekelle Institute of Technology and did thesis on Applied Machine learning under 
-supervision of  <a href="https://scholar.google.com/citations?hl=en&user=f2oyWTkAAAAJ"> Dr. Ramesh Gadde</a> And Fisseha Mezgebe.  I did Master's at University of Tsukuba, Japan,  
-<a href="https://www.roboken.iit.tsukuba.ac.jp/en/"> intelligent robot laboratory</a>, under the supervision of Dr. Akihisa Ohya and Dr. Ayanori Yorozu on Robotics and state  estimation. </p>
-			
-<p>Currently I'm working as an AI and Robotics engineer at QibiTech Inc, Tokyo, Japan. My role ranges from Computer Vision, as object detection and segmentation 
-using Machine learning with PyTorch and YOLO to Robot control ( wheeled robot navigation and mobile manipulators).</p>
-	
-<p>I'm interested in developing Deep Learning Models for Robot Perception and intelligence. Currently, I’m focusing on embodied  
-AI or Cognitive robotics. This area focuses on developing Grounded AI on real robots which is hopefully a promising sector for realizing General Artificial intelligence.</p>
-                </div>
-            </div> 
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Hadush Hailu</b></div><br>
-		<p><b>QibiTech Inc</b><br>
-		<p>AI x Robotics Engineer<br/><br/>
-			
-                <p><b>University of Tsukuba, Graduate School of Science and Technology</b><br/>
-               
-               Japan<br>
-                </p>
-            </div>
-            
-            
-            <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-              <dd><a href="https://scholar.google.com/citations?hl=en&user=OvKoYhoAAAAJ">Google Scholar</a></dd> 
-              <dd><a href="https://www.linkedin.com/in/hadush-hailu/">LinkedIn</a></dd>
-            </div>
-            
-            
-            <!-- Publications -->
-            <div class="col-md-8" style="height: 100vh;">    
-                <h2 id="publications">Publications</h2>
-                
-                <strong>Peer-reviewed</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
-                </ul>
-            
-                <strong>Technical Reports</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
-                </ul>
-            </div>
-
-            
-        </div>
-
-
+        <!-- Social links -->
+       <div class="social-links">
+        <a href="https://scholar.google.com/citations?user=Sze7rwgAAAAJ&hl=en" target="_blank">
+          <i class="fas fa-graduation-cap"></i> Google Scholar
+        </a> | 
+        <a href="https://www.researchgate.net/profile/Hadush-Hailu" target="_blank">
+          <i class="fab fa-researchgate"></i> ResearchGate
+        </a> | 
+        <a href="https://www.linkedin.com/in/hadush-hailu/" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a> |
+        <a href="https://github.com/HadushHailu" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>  
+      </div>
+      </div>
     </div>
-    <!-- /.container -->
-    
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-    
-</body>
+  </section>
 
+  <!-- Publications -->
+<section id="publications">
+  <h2>Selected Publications</h2>
+
+  <div class="pub-item">
+    <img src="images/DAAL_ALL_archtecture.png" alt="DAAL Architecture">
+    <div class="pub-details">
+      <h3>Density-Aware Adaptive Line Margin Loss (DAAL) for Multi-Modal Deep Metric Learning</h3>
+      <p><b>H Gebrerufael, A Tiwari, G Neupane, G Hailu, B Bora</b></p>
+      <p><i>IEEE/5th International Conference on Electrical, Computer and Energy Technologies (ICECET 2025), 
+      03–06 July 2025, Paris, France.</i></p>
+      <p><i>Presentation</i></p>
+      <div class="pub-links">
+        <a href="https://www.youtube.com/watch?v=mrCqDmJjNQU" target="_blank">
+          <i class="fab fa-youtube"></i> Video Presentation
+        </a> | 
+        <a href="https://github.com/your_repo" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a> | 
+        <a href="https://www.slideshare.net/slideshow/density-aware-adaptive-line-margin-loss-for-multi-modal-deep-metric-learning-pdf/282785900" target="_blank">
+          <i class="fab fa-slideshare"></i> Slides
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <img src="images/rsj2020.gif" alt="RSJ 2020">
+    <div class="pub-details">
+      <h3>Experimental Investigation of Mutual Avoidance Behavior for Multiple Autonomous Robots</h3>
+      <p><b>H Hailu, A Yorozu, A Ohya</b></p>
+      <p><i>The 38th Annual Conference of the Robotics Society of Japan (RSJ 2020), 
+      Vol. 38, October 9–11, 2020.</i></p>
+     <div class="pub-links">
+        <a href="https://www.youtube.com/watch?v=JqPdTV1cdQM" target="_blank">
+          <i class="fab fa-youtube"></i> Video Presentation
+        </a> 
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <img src="images/irce2025.gif" alt="IRCE 2025">
+    <div class="pub-details">
+      <h3>Forecast-Driven MPC for Decentralized Multi-Robot Collision Avoidance</h3>
+      <p><b>H Hailu, B Gebregziabher, P Raj</b></p>
+      <p><i>IEEE/The 8th International Conference on Intelligent Robotics and Control Engineering (IRCE 2025), 
+      Kunming, China, August 18–21, 2025.</i></p>
+     <div class="pub-links">
+        <a href="https://www.youtube.com/watch?v=JqPdTV1cdQM" target="_blank">
+          <i class="fab fa-youtube"></i> Video Presentation
+        </a> | 
+        <a href="https://github.com/your_repo" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a> | 
+        <a href="https://www.slideshare.net/slideshow/presentation__forecast_driven_mpc_for_decentralized_multi_robot_collision_avoidance-pdf/282785802" target="_blank">
+          <i class="fab fa-slideshare"></i> Slides
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <img src="images/asme2021.png" alt="asme 2021">
+    <div class="pub-details">
+      <h3>Experimental investigation of mutual collision avoidance behavior for multiple mobile robots</h3>
+      <p><b>A Yorozu, H Hailu, A Ohya</b></p>
+      <p><i>IEEE/ASME International Conference on Advanced Intelligent Mechatronics, 2021</i></p>
+      <div class="pub-links">
+        <a href="https://youtube.com/your_video" target="_blank">
+          <i class="fab fa-youtube"></i> Video
+        </a> | 
+        <a href="https://github.com/your_repo" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+  <!-- Projects -->
+<section id="projects">
+  <h2>Selected Projects</h2>
+
+   <div class="projects-row">
+    <div class="project-card">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/beSiJNWtmKU?si=w7ivjQhxILHb7KV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <p class="project-title"><b>Phenotyping and Precision Agriculture</b> (2025)</p>
+      <p class="project-desc">
+        Leveraging ROS for robot control and TensorFlow for DL image processing to automate phenotyping in crop breeding applications.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <video controls>
+        <source src="videos/spot.mp4" type="video/mp4">
+      </video>
+      <p class="project-title"><b>Legged Robot (Boston Dynamics SPOT) for Industrial Site Inspection</b> (2023)</p>
+      <p class="project-desc">
+        Developed control and navigation algorithms for the Boston Dynamics SPOT robot to enable autonomous industrial site inspections. ROS for control and navigation with PyTorch x FastRCNN for grate and puddle detection.
+      </p>
+    </div>
+  </div>
+
+  <div class="projects-row">
+    <div class="project-card">
+      <video controls>
+        <source src="videos/hanamoflor.mp4" type="video/mp4">
+      </video>
+      <p>BenchBot (2024)</p>
+    </div>
+    <div class="project-card">
+      <video controls>
+        <source src="videos/multirobot_ntt.mp4" type="video/mp4">
+      </video>
+      <p>Another Competition (2023)</p>
+    </div>
+  </div>
+
+  <div class="projects-row">
+    <div class="project-card">
+      <video controls>
+        <source src="videos/table_cleaning.mp4" type="video/mp4">
+      </video>
+      <p>BenchBot (2024)</p>
+    </div>
+     <div class="project-card">
+      <video controls>
+        <source src="videos/manipulator_design.mp4" type="video/mp4">
+      </video>
+      <p class="project-title"><b>Affordable 6-DOF Manipulator Design</b> (2025)</p>
+      <p class="project-desc">
+       A lightweight, 3D-printed 6-DOF robotic arm designed to be affordable, easy to build, and suitable for research and educational use.
+      </p>
+      <div class="project-links">
+        <a href="https://www.youtube.com/watch?v=iR21UC8_vW4" target="_blank">
+          <i class="fab fa-youtube"></i> Full Video
+        </a> 
+      </div>
+  </div>
+</section>
+
+
+<!-- Research in Progress -->
+<section id="publications">
+  <h2>Research in Progress</h2>
+
+  <div class="pub-item">
+    <img src="images/DAAL_ALL_archtecture.png" alt="DAAL Architecture">
+    <div class="pub-details">
+      <h3>Multi object tracking for predictive collision avoidance</h3>
+      <p><b>Bruk Gebregziabher, Hadush Hailu</b></p>
+      <p><i>https://doi.org/10.48550/arXiv.2307.02161, 2023</i></p>
+      <p><i>Presentation</i></p>
+      <div class="pub-links">
+        <a href="https://www.youtube.com/watch?v=mrCqDmJjNQU" target="_blank">
+          <i class="fab fa-youtube"></i> Video
+        </a> | 
+        <a href="https://github.com/your_repo" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <img src="images/chatbot.png" alt="DAAL Architecture">
+    <div class="pub-details">
+      <h3>Deep Learning Based Amharic Chatbot for FAQs in Universities</h3>
+      <p><b>Goitom Ybrah, Hadush Hailu, Shishay Welay (PhD.)</b></p>
+      <p><i>https://doi.org/10.48550/arXiv.2402.01720, 2024</i></p>
+     <div class="pub-links">
+        <a href="https://github.com/HadushHailu/Deep-Learning-Based-Amharic-Chatbot-for-FAQs-in-Universities-?tab=readme-ov-file" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Robotics Competition -->
+<section id="projects">
+  <h2>Robotics Competition</h2>
+
+   <div class="projects-row">
+    <div class="project-card">
+      <video controls>
+        <source src="videos/robotsoccer.mp4" type="video/mp4">
+      </video>
+       <p class="project-title"><b>iCog Makers RoboSoccer Cup, Ethiopia</b> (2017)</p>
+       <p class="project-desc">
+      We participated in Ethiopia’s first national RoboSoccer competition as Team Phoenix (Mekelle University & Mekelle Institute of Technology) and won 2nd place with our low-cost autonomous RoboSapien platform.
+      </p>
+      <div class="project-links">
+        <a href="https://www.youtube.com/watch?v=yld2HOV_o0o" target="_blank">
+          <i class="fab fa-youtube"></i> Full Video
+        </a> |
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Sze7rwgAAAAJ&citation_for_view=Sze7rwgAAAAJ:W7OEmFMy1HYC" target="_blank">
+          <i class="fas fa-graduation-cap"></i> Paper
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <video controls>
+        <source src="videos/rock-paper-scissor.mp4" type="video/mp4">
+      </video>
+      <p class="project-title"><b>Player Robot Competition, University of Tsukuba, Japan </b> (2020)</p>
+      <p class="project-desc">
+        We developed a robot that autonomously plays rock–paper–scissors using sensing and control algorithms. Although we did not win, the project offered valuable experience in real-time perception and human–robot interaction.
+      </p>
+      <div class="project-links">
+        <a href="https://www.youtube.com/watch?v=92Cm7mSZVOg" target="_blank">
+          <i class="fab fa-youtube"></i> Full Video
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Robotic Platforms I’ve Worked With -->
+<section id="robots">
+  <h2>Robotic Platforms I’ve Worked With</h2>
+  <div class="robots-row">
+    <div class="robot-card">
+      <img src="images/spot_img.png" alt="Boston Dynamics Spot">
+      <p>Four Legged Boston Dynamics SPOT robot</p>
+    </div>
+    <div class="robot-card">
+      <img src="images/turtlebot3.jpg" alt="TurtleBot3">
+      <p>TurtleBot3 – Multi-robot navigation and SLAM</p>
+    </div>
+    <div class="robot-card">
+      <img src="images/drone.jpg" alt="Drone">
+      <p>Quadcopter UAV – Vision-based obstacle avoidance</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer>
+    <p>© 2025 Hadush Hailu</p>
+  </footer>
+</body>
 </html>
